@@ -27,8 +27,7 @@ function Home() {
     <div className="content-container">
       <h2>Overview</h2>
       <p>
-      <h1 className="vertical-navbar-logo">OPENPROS</h1>
-      is the first large-scale dataset for prostate ultrasound computed tomography (USCT) imaging. It contains over 280,000 anatomically realistic speed-of-sound (SOS) maps and corresponding ultrasound waveforms. This dataset enables robust benchmarking of data-driven inversion methods under clinically realistic limited-view conditions.
+        OPENPROS is the first large-scale dataset for prostate ultrasound computed tomography (USCT) imaging. It contains over 280,000 anatomically realistic speed-of-sound (SOS) maps and corresponding ultrasound waveforms. This dataset enables robust benchmarking of data-driven inversion methods under clinically realistic limited-view conditions.
       </p>
       <p>
         Built from real clinical MRI/CT scans and ex vivo ultrasound data, it supports development and evaluation of deep learning methods, including CNNs and Vision Transformers, for reconstructing high-resolution tissue maps.
@@ -78,8 +77,9 @@ function Citation() {
   return (
     <div className="content-container">
       <h2>Citation</h2>
-      <p>If you use <h1 className="vertical-navbar-logo">OPENPROS</h1>
-      in your work, please cite:</p>
+      <p>
+        If you use OPENPROS in your work, please cite:
+      </p>
       <pre>
       {`@misc{feng2023openpros,
         title={OPENPROS: A Large-Scale Dataset for Limited View Prostate Ultrasound Computed Tomography},
