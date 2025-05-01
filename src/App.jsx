@@ -78,14 +78,14 @@ function Citation() {
       <h2>Citation</h2>
       <p>If you use <InlineMath>{"\\mathbb{O}^{PROS}"}</InlineMath> in your work, please cite:</p>
       <pre>
-        @misc{{feng2023openpros,
-          title={{OPENPROS: A Large-Scale Dataset for Limited View Prostate Ultrasound Computed Tomography}},
-          author={{Shihang Feng et al.}},
-          year={{2023}},
-          eprint={{2306.12386}},
-          archivePrefix={{arXiv}},
-          primaryClass={{physics.geo-ph}}
-        }}
+      {`@misc{feng2023openpros,
+        title={OPENPROS: A Large-Scale Dataset for Limited View Prostate Ultrasound Computed Tomography},
+        author={Shihang Feng et al.},
+        year={2023},
+        eprint={2306.12386},
+        archivePrefix={arXiv},
+        primaryClass={physics.geo-ph}
+      }`}
       </pre>
     </div>
   );
