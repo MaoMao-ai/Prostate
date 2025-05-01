@@ -2,24 +2,24 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import "katex/dist/katex.min.css";
 import { InlineMath } from "react-katex";
+import "./style.css";
 
 function Navbar() {
   return (
-    <nav className="vertical-navbar">
-      <div className="vertical-navbar-container">
-        <h1 className="vertical-navbar-logo">
-          <InlineMath>{"\\mathbb{O}^{PROS}"}</InlineMath>
-        </h1>
-        <ul className="vertical-navbar-list">
-          <li><NavLink to="/" className={({isActive}) => isActive ? "active" : ""}>Home</NavLink></li>
-          <li><NavLink to="/datasets" className={({isActive}) => isActive ? "active" : ""}>Datasets</NavLink></li>
-          <li><NavLink to="/benchmarks" className={({isActive}) => isActive ? "active" : ""}>Benchmarks</NavLink></li>
-          <li><NavLink to="/citation" className={({isActive}) => isActive ? "active" : ""}>Citation</NavLink></li>
-        </ul>
+    <div className="nav-wrapper">
+      <div className="logo">
+        <InlineMath>{"\\mathbb{O}^{PROS}"}</InlineMath>
       </div>
-    </nav>
+      <div className="nav-links">
+        <NavLink to="/" className="nav-card">Home</NavLink>
+        <NavLink to="/datasets" className="nav-card">Datasets</NavLink>
+        <NavLink to="/benchmarks" className="nav-card">Benchmarks</NavLink>
+        <NavLink to="/citation" className="nav-card">Citation</NavLink>
+      </div>
+    </div>
   );
 }
+
 
 function Home() {
   return (
