@@ -8,7 +8,8 @@ function Navbar() {
   return (
     <div className="nav-wrapper">
       <div className="logo">
-        <InlineMath>{"OPENPROS"}</InlineMath>
+      <h1 className="vertical-navbar-logo">OPENPROS</h1>
+
       </div>
       <div className="nav-links">
         <NavLink to="/" className="nav-card">Home</NavLink>
@@ -26,7 +27,8 @@ function Home() {
     <div className="content-container">
       <h2>Overview</h2>
       <p>
-        <InlineMath>{"OPENPROS"}</InlineMath> is the first large-scale dataset for prostate ultrasound computed tomography (USCT) imaging. It contains over 280,000 anatomically realistic speed-of-sound (SOS) maps and corresponding ultrasound waveforms. This dataset enables robust benchmarking of data-driven inversion methods under clinically realistic limited-view conditions.
+      <h1 className="vertical-navbar-logo">OPENPROS</h1>
+      is the first large-scale dataset for prostate ultrasound computed tomography (USCT) imaging. It contains over 280,000 anatomically realistic speed-of-sound (SOS) maps and corresponding ultrasound waveforms. This dataset enables robust benchmarking of data-driven inversion methods under clinically realistic limited-view conditions.
       </p>
       <p>
         Built from real clinical MRI/CT scans and ex vivo ultrasound data, it supports development and evaluation of deep learning methods, including CNNs and Vision Transformers, for reconstructing high-resolution tissue maps.
@@ -76,7 +78,8 @@ function Citation() {
   return (
     <div className="content-container">
       <h2>Citation</h2>
-      <p>If you use <InlineMath>{"\\mathbb{O}^{PROS}"}</InlineMath> in your work, please cite:</p>
+      <p>If you use <h1 className="vertical-navbar-logo">OPENPROS</h1>
+      in your work, please cite:</p>
       <pre>
       {`@misc{feng2023openpros,
         title={OPENPROS: A Large-Scale Dataset for Limited View Prostate Ultrasound Computed Tomography},
