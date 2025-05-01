@@ -27,14 +27,24 @@ function Home() {
     <div className="content-container">
       <h2>Overview</h2>
       <p>
-        <strong>OPENPROS</strong> is the first large-scale dataset for prostate ultrasound computed tomography (USCT) imaging. It contains over 280,000 anatomically realistic speed-of-sound (SOS) maps and corresponding ultrasound waveforms. This dataset enables robust benchmarking of data-driven inversion methods under clinically realistic limited-view conditions.
+        Prostate cancer remains one of the most prevalent and lethal cancers among men. Early detection of prostate cancer has been shown to be critical, but an accurate and widely accessible approach is still an unmet need. Ultrasound imaging is used for routine diagnosis and biopsy guidance, yet its early detection is hindered by limitations in conventional transrectal ultrasound (TRUS) imaging.
       </p>
       <p>
-        Built from real clinical MRI/CT scans and ex vivo ultrasound data, it supports development and evaluation of deep learning methods, including CNNs and Vision Transformers, for reconstructing high-resolution tissue maps.
+        To address this gap, we introduce <strong>OPENPROS</strong>, the first large-scale synthetic benchmark dataset specifically designed for prostate ultrasound computed tomography (USCT). <strong>OPENPROS</strong> comprises over 280,000 pairs of anatomically realistic speed-of-sound (SOS) maps and corresponding ultrasound waveforms, generated through advanced finite-difference time-domain (FDTD) simulations.
+      </p>
+      <p>
+        Derived from real clinical MRI/CT scans and ex vivo ultrasound measurements annotated by medical experts, our dataset accurately captures diverse prostate anatomies and wave propagation complexities without noise artifacts, making it ideal for methodological development and benchmarking.
+      </p>
+      <p>
+        Baseline experiments highlight the dataset's utility by evaluating several state-of-the-art deep learning inversion methods—such as CNN-based architectures and Vision Transformers—demonstrating superior reconstruction accuracy and robustness compared to traditional full-waveform inversion under challenging limited-view scenarios.
+      </p>
+      <p>
+        Both the dataset and associated simulation tools are fully open-sourced, facilitating reproducibility and future innovations in medical ultrasound imaging.
       </p>
     </div>
   );
 }
+
 
 function Datasets() {
   return (
